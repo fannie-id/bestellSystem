@@ -15,15 +15,6 @@ public class Main {
 
         int[] einkaufsliste = {2,3,6,7,8};
         shopService.addOrder(einkaufsliste);
-/*
-        try {
-            shopService.addOrder(einkaufsliste);
-        } catch (FileNotFoundException e) {
-            System.err.println(e.getMessage());
-        }
-
- */
-
 
         System.out.println(shopService.getOrderById(1));
 
