@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b593bd93-c8e8-4877-a9d2-d9a769836772" name="Changes" comment="pom maven plugin">
+    <list default="true" id="b593bd93-c8e8-4877-a9d2-d9a769836772" name="Changes" comment="pom maven jupiter version 5.9.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -156,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667551682095</updated>
-      <workItem from="1667551683999" duration="33874000" />
+      <workItem from="1667551683999" duration="34193000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1667595093606</created>
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667633444678</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pom maven jupiter version 5.9.0">
+      <created>1667673297403</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667673297403</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +211,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="pom maven plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom maven plugin" />
+    <MESSAGE value="pom maven jupiter version 5.9.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom maven jupiter version 5.9.0" />
   </component>
 </project>
