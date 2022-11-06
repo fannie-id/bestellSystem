@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,22 +16,8 @@ public class ShopService {
         return productRepo.getProductList();
     }
 
-    public void addOrder(int[] einkaufliste){
 
-        List<Product> products = new ArrayList<>();
 
-        for(int id: einkaufliste){
-            Product p = productRepo.getById(id);
-            if (p.getId() == id) {
-                products.add(p);
-            }
-        }
-
-        orderRepo.add(products);
-        System.out.println("new order accept");
-
-    }
-/*
     public void addOrder(int[] einkaufliste) throws FileNotFoundException {
         if(einkaufliste.length==0){
             throw new FileNotFoundException("Did not find any ids");
@@ -53,7 +40,7 @@ public class ShopService {
         }
     }
 
- */
+
 
     public Order getOrderById(int n){
         return orderRepo.getById(n);

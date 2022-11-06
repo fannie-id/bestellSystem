@@ -3,6 +3,8 @@ package org.example;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,12 +18,12 @@ class ShopServiceTest {
     public  void beforeEach (){
         shopService = new ShopService();
 
-        Product apple = new Product(1,"apple");
-        Product orange = new Product(2,"orange");
-        Product paper = new Product(3,"paper");
-        Product cellphone = new Product(4,"cellphone");
-        Product pen = new Product(5,"pen");
-        Product jack = new Product(6,"jack");
+        Product apple = new Fruit(1,"apple");
+        Product orange = new Fruit(2,"orange");
+        Product paper = new Stationery(3,"paper");
+        Product cellphone = new Electro(4,"cellphone");
+        Product pen = new Stationery(5,"pen");
+        Product jack = new Mode(6,"jack");
 
         productList = new ArrayList<>();
         productList.add(apple);
