@@ -1,6 +1,8 @@
-package org.example;
+package org.example.Model;
 
-public class Stationery extends ProductImpl{
+
+
+public class Stationery extends ProductImpl {
     public Stationery(int id, String name) {
         super(id, name);
     }

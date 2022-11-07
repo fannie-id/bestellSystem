@@ -5,6 +5,7 @@ import org.example.Model.Product;
 import org.example.Repo.OrderRepo;
 import org.example.Repo.ProductRepo;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,20 +21,26 @@ public class ShopService {
         return productRepo.getProductList();
     }
 
-    public void addOrder(int[] einkaufliste){
-
+    public void addOrder(int[] einkaufliste) throws FileNotFoundException {
+        if(einkaufliste.length==0){
+            throw new FileNotFoundException("Did not find any ids");
+        }
         List<Product> products = new ArrayList<>();
-
+        List<Integer> list = new ArrayList<>();
         for(int id: einkaufliste){
             Product p = productRepo.getById(id);
-            if (p.getId() == id) {
+            if (p == null) {
+                list.add(id);
+            } else {
                 products.add(p);
             }
         }
-
-        orderRepo.add(products);
-        System.out.println("new order accept");
-
+        if(list.size()>0){
+            throw new FileNotFoundException("Did not find: " + list);
+        }else{
+            orderRepo.add(products);
+            System.out.println("new order accept");
+        }
     }
 
     public Order getOrderById(int n){

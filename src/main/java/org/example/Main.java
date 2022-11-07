@@ -1,6 +1,8 @@
 package org.example;
 
 
+import org.example.Service.ShopService;
+
 import java.io.FileNotFoundException;
 
 public class Main {

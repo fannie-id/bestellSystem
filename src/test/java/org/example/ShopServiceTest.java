@@ -1,12 +1,9 @@
 package org.example;
 
-import org.example.Model.Order;
-import org.example.Model.Product;
+import org.example.Model.*;
 import org.example.Service.ShopService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.List;

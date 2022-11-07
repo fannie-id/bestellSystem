@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Model;
 
 public class ProductImpl implements Product{
     private int id;

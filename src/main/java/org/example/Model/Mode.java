@@ -1,17 +1,18 @@
-package org.example;
+package org.example.Model;
 
-public class Electro extends ProductImpl {
 
-    public Electro(int id, String name) {
+
+public class Mode extends ProductImpl {
+
+    public Mode(int id, String name) {
         super(id, name);
     }
 
     @Override
     public String toString() {
-        return "Electro{" +
+        return "Mode{" +
                 "name='" + getName() + '\'' +
                 ", id=" + getId() +
                 '}';
     }
-
 }
