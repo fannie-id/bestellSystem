@@ -1,4 +1,7 @@
-package org.example;
+package org.example.Repo;
+
+import org.example.Model.Order;
+import org.example.Model.Product;
 
 import java.util.ArrayList;
 import java.util.List;
