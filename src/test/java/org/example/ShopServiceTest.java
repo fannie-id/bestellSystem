@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.Model.Order;
+import org.example.Model.Product;
+import org.example.Service.ShopService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +12,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ShopServiceTest {
-    private  ShopService shopService ;
+    private ShopService shopService ;
     private List<Product> productList;
     private List<Order> orderList;
     @BeforeEach
@@ -45,6 +48,13 @@ class ShopServiceTest {
 
     @Test
     void list_all_products(){
+        List<Product> excepted = productList;
+        List<Product> result = shopService.listProducts();
+        assertEquals(excepted,result);
+    }
+
+    @Test
+    void list_all_orders(){
         List<Order> excepted = orderList;
         List<Order> result = shopService.listOrders();
         assertEquals(excepted,result);
