@@ -5,9 +5,11 @@ import org.example.Service.ShopService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ShopServiceTest {
@@ -59,18 +61,38 @@ class ShopServiceTest {
         assertEquals(excepted,result);
     }
     @Test
-    void add_order_exception(){
+    void add_order_exception_no_products(){
+        int[] ids = new int[0];
+        assertThatThrownBy(() -> shopService.addOrder(ids)).hasMessage("Did not find any ids");
+    }
+    @Test
+    void add_order_exception_no_such_product(){
         int oldL = orderList.size();
+        int[] ids = {7};
+        assertThatThrownBy(() -> shopService.addOrder(ids)).hasMessage("Did not find: [7]");
+    }
+
+
+    @Test
+    void add_order_successful() throws FileNotFoundException {
+
         int[] ids = {2,3,5};
+
+
+        int oldL = orderList.size();
+        System.out.println(oldL);
         shopService.addOrder(ids);
         int newL = orderList.size();
         assertTrue((newL-oldL==1));
+
         List<Product> list = new ArrayList<>();
         list.add(shopService.getProductById(2));
         list.add(shopService.getProductById(3));
         list.add(shopService.getProductById(5));
         Order excepted = new Order(oldL+1,list);
         assertEquals(excepted,orderList.get(newL-1));
+
     }
+
 
 }

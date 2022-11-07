@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b593bd93-c8e8-4877-a9d2-d9a769836772" name="Changes" comment="pom maven jupiter version 5.9.0">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Electro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Electro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Mode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/ProductImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stationery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Stationery.java" afterDir="false" />
+    <list default="true" id="b593bd93-c8e8-4877-a9d2-d9a769836772" name="Changes" comment="assertJ tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Repo/ProductRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Repo/ProductRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ShopServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +55,8 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -69,7 +67,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShopServiceTest.add_order_exception">
+  <component name="RunManager" selected="JUnit.ShopServiceTest.add_order_successful">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="bestellSystem" />
@@ -79,37 +77,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.gib_id_output_product" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bestellSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.MainTest" />
-      <option name="METHOD_NAME" value="gib_id_output_product" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bestellSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ShopServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,17 +97,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopServiceTest.gib_einzel_prod_aus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopServiceTest.add_order_exception_no_products" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bestellSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.Model.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ShopServiceTest" />
-      <option name="METHOD_NAME" value="gib_einzel_prod_aus" />
+      <option name="METHOD_NAME" value="add_order_exception_no_products" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.add_order_exception_no_such_product" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bestellSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ShopServiceTest" />
+      <option name="METHOD_NAME" value="add_order_exception_no_such_product" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.add_order_successful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bestellSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ShopServiceTest" />
+      <option name="METHOD_NAME" value="add_order_successful" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopServiceTest.add_order_successful" />
+        <item itemvalue="JUnit.ShopServiceTest.add_order_exception_no_such_product" />
+        <item itemvalue="JUnit.ShopServiceTest.add_order_exception_no_products" />
         <item itemvalue="JUnit.ShopServiceTest.add_order_exception" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ShopServiceTest" />
-        <item itemvalue="JUnit.ShopServiceTest.gib_einzel_prod_aus" />
-        <item itemvalue="JUnit.MainTest.gib_id_output_product" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +164,8 @@
       <option name="presentableId" value="Default" />
       <updated>1667551682095</updated>
       <workItem from="1667551683999" duration="34193000" />
+      <workItem from="1667831304173" duration="306000" />
+      <workItem from="1667842834441" duration="2657000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1667595093606</created>
@@ -187,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667673297403</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="get changes from master">
+      <created>1667820542563</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667820542563</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +228,23 @@
     <MESSAGE value="initial" />
     <MESSAGE value="pom maven plugin" />
     <MESSAGE value="pom maven jupiter version 5.9.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom maven jupiter version 5.9.0" />
+    <MESSAGE value="get changes from master" />
+    <MESSAGE value="assertJ tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="assertJ tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/ShopServiceTest.java</url>
+          <line>76</line>
+          <properties class="org.example.ShopServiceTest" method="add_order_successful">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
